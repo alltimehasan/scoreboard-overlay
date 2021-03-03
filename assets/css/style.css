@@ -1,0 +1,183 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f8f9fa;
+}
+
+html, body {
+  height: 100%;
+}
+
+#home {
+  height: 100%;
+  position: relative;
+  z-index: 0;
+  background-image: url("../images/Scoreboard-Overlay.jpg");
+  background-attachment: fixed;
+}
+
+#home::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+.scoreboard-overlay {
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  left: 0;
+  z-index: 999999;
+}
+
+.scoreboard-overlay-top {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+}
+
+.scoreboard-item {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.current-score {
+  width: 160px;
+  height: 120px;
+  background-color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+
+.current-score h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 120px;
+  margin-bottom: 0;
+}
+
+.current-score-red h3 {
+  color: #ea0029;
+}
+
+.current-score-blue h3 {
+  color: #0062a9;
+}
+
+.score-timer {
+  background-image: url(../images/scoreboard-shape-1.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+  width: 200px;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+.score-timer img {
+  display: block;
+  width: 80px;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.score-timer span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  color: #fff;
+  font-weight: 600;
+  font-style: italic;
+  line-height: 50px;
+  letter-spacing: 1px;
+}
+
+.score-top-green {
+  font-family: "Montserrat", sans-serif;
+  background-color: #28a745;
+  font-size: 50px;
+  line-height: 50px;
+  padding: 2px;
+  color: #fff;
+  font-weight: 700;
+  width: 60px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.score-bottom-red {
+  font-family: "Montserrat", sans-serif;
+  background-color: #ea0029;
+  font-size: 50px;
+  line-height: 50px;
+  padding: 2px;
+  color: #fff;
+  font-weight: 700;
+  width: 60px;
+  text-align: center;
+}
+
+.scoreboard-competitor {
+  background-color: #ea0029;
+  padding: 2px 30px;
+}
+
+.competitor-red {
+  padding-left: 100px;
+  border-top-left-radius: 50px;
+}
+
+.competitor-blue {
+  padding-right: 100px;
+  border-top-right-radius: 50px;
+}
+
+.scoreboard-competitor h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0;
+  padding: 5px 0;
+  min-width: 330px;
+}
+
+.scoreboard-overlay-bottom {
+  margin-top: 10px;
+}
+
+.scoreboard-overlay-bottom .text-right {
+  position: relative;
+}
+
+.scoreboard-overlay-bottom .text-right:after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 30px;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  z-index: 999999;
+  background-color: #ea0029;
+}
+
+.scoreboard-overlay-bottom h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
