@@ -1,8 +1,14 @@
 @use 'variables' as *;
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
 	font-family: 'Montserrat', sans-serif;
-	background-color: $body-color;
+	background-color: transparent;
 }
 
 html, body {
